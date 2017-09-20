@@ -1,0 +1,1821 @@
+Array
+(
+    [#attributes] => Array
+        (
+            [class] => Array
+                (
+                    [0] => simplenews-subscriptions-block-ico-subscription
+                    [1] => simplenews-subscriber-form
+                )
+
+            [data-drupal-selector] => simplenews-subscriptions-block-ico-subscription
+        )
+
+    [#cache] => Array
+        (
+            [contexts] => Array
+                (
+                    [0] => languages:language_interface
+                    [1] => user.roles:authenticated
+                )
+
+            [tags] => Array
+                (
+                    [0] => config:core.entity_form_display.simplenews_subscriber.simplenews_subscriber.default
+                    [1] => simplenews_subscriber:1
+                )
+
+            [max-age] => -1
+        )
+
+    [#process] => Array
+        (
+            [0] => ::processForm
+            [1] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\Entity\Entity\EntityFormDisplay
+                            [displayContext:protected] => form
+                            [id:protected] => simplenews_subscriber.simplenews_subscriber.default
+                            [targetEntityType:protected] => simplenews_subscriber
+                            [bundle:protected] => simplenews_subscriber
+                            [fieldDefinitions:protected] => Array
+                                (
+                                    [mail] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Field\BaseFieldDefinition
+                                            [type:protected] => email
+                                            [propertyDefinitions:protected] => Array(1)
+                                            [schema:protected] => Array(4)
+                                            [indexes:protected] => Array(0)
+                                            [itemDefinition:protected] => Drupal\Core\Field\TypedData\FieldItemDataDefinition
+                                            [definition:protected] => Array(8)
+                                        )
+
+                                    [uid] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Field\BaseFieldDefinition
+                                            [type:protected] => entity_reference
+                                            [propertyDefinitions:protected] => Array(2)
+                                            [schema:protected] => Array(4)
+                                            [indexes:protected] => Array(0)
+                                            [itemDefinition:protected] => Drupal\Core\Field\TypedData\FieldItemDataDefinition
+                                            [definition:protected] => Array(7)
+                                        )
+
+                                    [subscriptions] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\field\Entity\FieldConfig
+                                            [deleted:protected] => 
+                                            [fieldStorage:protected] => Drupal\field\Entity\FieldStorageConfig
+                                            [id:protected] => simplenews_subscriber.simplenews_subscriber.subscriptions
+                                            [field_name:protected] => subscriptions
+                                            [field_type:protected] => simplenews_subscription
+                                            [entity_type:protected] => simplenews_subscriber
+                                            [bundle:protected] => simplenews_subscriber
+                                            [label:protected] => Subscriptions
+                                            [description:protected] => 
+                                            [settings:protected] => Array(2)
+                                            [required:protected] => 
+                                            [translatable:protected] => 
+                                            [default_value:protected] => Array(0)
+                                            [default_value_callback:protected] => 
+                                            [itemDefinition:protected] => Drupal\Core\Field\TypedData\FieldItemDataDefinition
+                                            [constraints:protected] => Array(0)
+                                            [propertyConstraints:protected] => Array(0)
+                                            [originalId:protected] => simplenews_subscriber.simplenews_subscriber.subscriptions
+                                            [status:protected] => 1
+                                            [uuid:protected] => 2305308f-bb4b-4654-8a0b-3b97b990264c
+                                            [langcode:protected] => en
+                                            [third_party_settings:protected] => Array(0)
+                                            [_core:protected] => Array(1)
+                                            [trustedData:protected] => 
+                                            [entityTypeId:protected] => field_config
+                                            [enforceIsNew:protected] => 
+                                            [typedData:protected] => 
+                                            [cacheContexts:protected] => Array(1)
+                                            [cacheTags:protected] => Array(0)
+                                            [cacheMaxAge:protected] => -1
+                                            [_serviceIds:protected] => Array(0)
+                                            [dependencies:protected] => Array(2)
+                                            [isSyncing:Drupal\Core\Config\Entity\ConfigEntityBase:private] => 
+                                            [isUninstalling:Drupal\Core\Config\Entity\ConfigEntityBase:private] => 
+                                        )
+
+                                )
+
+                            [mode:protected] => default
+                            [status:protected] => 1
+                            [content:protected] => Array
+                                (
+                                    [mail] => Array
+                                        (
+                                            [type] => email_default
+                                            [weight] => 5
+                                            [settings] => Array(1)
+                                            [third_party_settings] => Array(0)
+                                            [region] => content
+                                        )
+
+                                    [subscriptions] => Array
+                                        (
+                                            [type] => simplenews_subscription_select
+                                            [weight] => 0
+                                            [settings] => Array(0)
+                                            [third_party_settings] => Array(0)
+                                            [region] => content
+                                        )
+
+                                )
+
+                            [hidden:protected] => Array
+                                (
+                                    [uid] => 1
+                                )
+
+                            [originalMode:protected] => block
+                            [plugins:protected] => Array
+                                (
+                                    [subscriptions] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\simplenews\Plugin\Field\FieldWidget\SubscriptionWidget
+                                            [newsletterIds:protected] => Array(1)
+                                            [hidden:protected] => 1
+                                            [column:protected] => target_id
+                                            [fieldDefinition:protected] => Drupal\field\Entity\FieldConfig
+                                            [settings:protected] => Array(0)
+                                            [thirdPartySettings:protected] => Array(0)
+                                            [defaultSettingsMerged:protected] => 
+                                            [pluginId:protected] => simplenews_subscription_select
+                                            [pluginDefinition:protected] => Array(6)
+                                            [configuration:protected] => Array(0)
+                                            [stringTranslation:protected] => 
+                                            [_serviceIds:protected] => Array(0)
+                                        )
+
+                                    [mail] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Field\Plugin\Field\FieldWidget\EmailDefaultWidget
+                                            [fieldDefinition:protected] => Drupal\Core\Field\BaseFieldDefinition
+                                            [settings:protected] => Array(2)
+                                            [thirdPartySettings:protected] => Array(0)
+                                            [defaultSettingsMerged:protected] => 1
+                                            [pluginId:protected] => email_default
+                                            [pluginDefinition:protected] => Array(6)
+                                            [configuration:protected] => Array(0)
+                                            [stringTranslation:protected] => 
+                                            [_serviceIds:protected] => Array(0)
+                                        )
+
+                                )
+
+                            [pluginManager:protected] => stdClass Object
+                                (
+                                    [__CLASS__] => Drupal\Core\Field\WidgetPluginManager
+                                    [fieldTypeManager:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Field\FieldTypePluginManager
+                                            [typedDataManager:protected] => Drupal\Core\TypedData\TypedDataManager
+                                            [cacheKey:protected] => field_types_plugins
+                                            [cacheTags:protected] => Array(0)
+                                            [alterHook:protected] => field_info
+                                            [subdir:protected] => Plugin/Field/FieldType
+                                            [moduleHandler:protected] => Drupal\Core\Extension\ModuleHandler
+                                            [defaults:protected] => Array(0)
+                                            [pluginDefinitionAnnotationName:protected] => Drupal\Core\Field\Annotation\FieldType
+                                            [pluginInterface:protected] => Drupal\Core\Field\FieldItemInterface
+                                            [namespaces:protected] => ArrayObject
+                                            [additionalAnnotationNamespaces:protected] => Array(0)
+                                            [discovery:protected] => 
+                                            [factory:protected] => 
+                                            [mapper:protected] => 
+                                            [definitions:protected] => Array(37)
+                                            [cacheBackend:protected] => Drupal\Core\Cache\DatabaseBackend
+                                            [useCaches:protected] => 1
+                                            [stringTranslation:protected] => 
+                                        )
+
+                                    [widgetOptions:protected] => 
+                                    [cacheKey:protected] => field_widget_types_plugins
+                                    [cacheTags:protected] => Array
+                                        (
+                                        )
+
+                                    [alterHook:protected] => field_widget_info
+                                    [subdir:protected] => Plugin/Field/FieldWidget
+                                    [moduleHandler:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Extension\ModuleHandler
+                                            [loadedFiles:protected] => Array(112)
+                                            [moduleList:protected] => Array(112)
+                                            [loaded:protected] => 1
+                                            [implementations:protected] => Array(240)
+                                            [verified:protected] => Array(121)
+                                            [hookInfo:protected] => 
+                                            [cacheBackend:protected] => Drupal\Core\Cache\DatabaseBackend
+                                            [cacheNeedsWriting:protected] => 
+                                            [alterFunctions:protected] => Array(54)
+                                            [root:protected] => D:\OpenServer\domains\tdoft.com
+                                            [includeFileKeys:protected] => Array(14)
+                                        )
+
+                                    [defaults:protected] => Array
+                                        (
+                                        )
+
+                                    [pluginDefinitionAnnotationName:protected] => Drupal\Core\Field\Annotation\FieldWidget
+                                    [pluginInterface:protected] => Drupal\Core\Field\WidgetInterface
+                                    [namespaces:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => ArrayObject
+                                            [__STORAGE__] => Array(124)
+                                        )
+
+                                    [additionalAnnotationNamespaces:protected] => Array
+                                        (
+                                        )
+
+                                    [discovery:protected] => 
+                                    [factory:protected] => 
+                                    [mapper:protected] => 
+                                    [definitions:protected] => Array
+                                        (
+                                            [comment_default] => Array(6)
+                                            [datetime_datelist] => Array(6)
+                                            [datetime_default] => Array(6)
+                                            [file_generic] => Array(6)
+                                            [image_image] => Array(6)
+                                            [link_default] => Array(6)
+                                            [metatag_firehose] => Array(6)
+                                            [panelizer] => Array(6)
+                                            [path] => Array(6)
+                                            [redirect_source] => Array(7)
+                                            [simplenews_subscription_select] => Array(6)
+                                            [telephone_default] => Array(6)
+                                            [text_textarea] => Array(6)
+                                            [text_textarea_with_summary] => Array(6)
+                                            [text_textfield] => Array(6)
+                                            [weight_selector] => Array(6)
+                                            [yamlform_entity_reference_autocomplete] => Array(7)
+                                            [yamlform_entity_reference_select] => Array(7)
+                                            [datetime_timestamp] => Array(6)
+                                            [boolean_checkbox] => Array(6)
+                                            [email_default] => Array(6)
+                                            [entity_reference_autocomplete_tags] => Array(7)
+                                            [entity_reference_autocomplete] => Array(7)
+                                            [language_select] => Array(6)
+                                            [number] => Array(6)
+                                            [options_buttons] => Array(6)
+                                            [options_select] => Array(6)
+                                            [string_textarea] => Array(6)
+                                            [string_textfield] => Array(6)
+                                            [uri] => Array(6)
+                                        )
+
+                                    [cacheBackend:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Cache\DatabaseBackend
+                                            [bin:protected] => cache_discovery
+                                            [connection:protected] => Drupal\Core\Database\Driver\mysql\Connection
+                                            [checksumProvider:protected] => Drupal\Core\Cache\DatabaseCacheTagsChecksum
+                                        )
+
+                                    [useCaches:protected] => 1
+                                )
+
+                            [renderer:protected] => stdClass Object
+                                (
+                                    [__CLASS__] => Drupal\Core\Render\Renderer
+                                    [theme:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Theme\ThemeManager
+                                            [themeNegotiator:protected] => Drupal\Core\Theme\ThemeNegotiator
+                                            [themeRegistry:protected] => Drupal\Core\Theme\Registry
+                                            [activeTheme:protected] => Drupal\Core\Theme\ActiveTheme
+                                            [themeInitialization:protected] => Drupal\Core\Theme\ThemeInitialization
+                                            [moduleHandler:protected] => Drupal\Core\Extension\ModuleHandler
+                                            [root:protected] => D:\OpenServer\domains\tdoft.com
+                                        )
+
+                                    [controllerResolver:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Controller\ControllerResolver
+                                            [classResolver:protected] => Drupal\Core\DependencyInjection\ClassResolver
+                                            [httpMessageFactory:protected] => Symfony\Bridge\PsrHttpMessage\Factory\DiactorosFactory
+                                            [logger:Symfony\Component\HttpKernel\Controller\ControllerResolver:private] => 
+                                            [supportsVariadic:Symfony\Component\HttpKernel\Controller\ControllerResolver:private] => 
+                                            [supportsScalarTypes:Symfony\Component\HttpKernel\Controller\ControllerResolver:private] => 
+                                        )
+
+                                    [elementInfo:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Render\ElementInfoManager
+                                            [elementInfo:protected] => Array(1)
+                                            [themeManager:protected] => Drupal\Core\Theme\ThemeManager
+                                            [cacheTagInvalidator:protected] => Drupal\Core\Cache\CacheTagsInvalidator
+                                            [cacheKey:protected] => element_info
+                                            [cacheTags:protected] => Array(0)
+                                            [alterHook:protected] => 
+                                            [subdir:protected] => Element
+                                            [moduleHandler:protected] => Drupal\Core\Extension\ModuleHandler
+                                            [defaults:protected] => Array(0)
+                                            [pluginDefinitionAnnotationName:protected] => Drupal\Core\Render\Annotation\RenderElement
+                                            [pluginInterface:protected] => Drupal\Core\Render\Element\ElementInterface
+                                            [namespaces:protected] => ArrayObject
+                                            [additionalAnnotationNamespaces:protected] => Array(0)
+                                            [discovery:protected] => 
+                                            [factory:protected] => 
+                                            [mapper:protected] => 
+                                            [definitions:protected] => 
+                                            [cacheBackend:protected] => Drupal\Core\Cache\DatabaseBackend
+                                            [useCaches:protected] => 1
+                                        )
+
+                                    [placeholderGenerator:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Render\PlaceholderGenerator
+                                            [rendererConfig:protected] => Array(2)
+                                        )
+
+                                    [renderCache:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Render\PlaceholderingRenderCache
+                                            [placeholderGenerator:protected] => Drupal\Core\Render\PlaceholderGenerator
+                                            [placeholderResultsCache:protected] => Array(0)
+                                            [requestStack:protected] => Symfony\Component\HttpFoundation\RequestStack
+                                            [cacheFactory:protected] => Drupal\Core\Cache\CacheFactory
+                                            [cacheContextsManager:protected] => Drupal\Core\Cache\Context\CacheContextsManager
+                                        )
+
+                                    [rendererConfig:protected] => Array
+                                        (
+                                            [required_cache_contexts] => Array(3)
+                                            [auto_placeholder_conditions] => Array(3)
+                                        )
+
+                                    [isRenderingRoot:protected] => 
+                                    [requestStack:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Symfony\Component\HttpFoundation\RequestStack
+                                            [requests:Symfony\Component\HttpFoundation\RequestStack:private] => Array(2)
+                                        )
+
+                                    [contextCollection:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => SplObjectStorage
+                                        )
+
+                                )
+
+                            [originalId:protected] => simplenews_subscriber.simplenews_subscriber.default
+                            [uuid:protected] => 701118b4-d1a5-419e-905d-eb8b4acc7774
+                            [langcode:protected] => en
+                            [third_party_settings:protected] => Array
+                                (
+                                )
+
+                            [_core:protected] => Array
+                                (
+                                    [default_config_hash] => pxNnkOchZljVErGC7uuVjmPpbp0Wy2CiK-pllIxNLK0
+                                )
+
+                            [trustedData:protected] => 
+                            [entityTypeId:protected] => entity_form_display
+                            [enforceIsNew:protected] => 
+                            [typedData:protected] => 
+                            [cacheContexts:protected] => Array
+                                (
+                                    [0] => languages:language_interface
+                                )
+
+                            [cacheTags:protected] => Array
+                                (
+                                )
+
+                            [cacheMaxAge:protected] => -1
+                            [_serviceIds:protected] => Array
+                                (
+                                )
+
+                            [dependencies:protected] => Array
+                                (
+                                    [config] => Array
+                                        (
+                                            [0] => field.field.simplenews_subscriber.simplenews_subscriber.subscriptions
+                                        )
+
+                                    [module] => Array
+                                        (
+                                            [0] => simplenews
+                                        )
+
+                                )
+
+                            [isSyncing:Drupal\Core\Config\Entity\ConfigEntityBase:private] => 
+                            [isUninstalling:Drupal\Core\Config\Entity\ConfigEntityBase:private] => 
+                        )
+
+                    [1] => processForm
+                )
+
+        )
+
+    [#parents] => Array
+        (
+        )
+
+    [mail] => Array
+        (
+            [#type] => container
+            [#parents] => Array
+                (
+                    [0] => mail_wrapper
+                )
+
+            [#attributes] => Array
+                (
+                    [class] => Array
+                        (
+                            [0] => field--type-email
+                            [1] => field--name-mail
+                            [2] => field--widget-email-default
+                        )
+
+                )
+
+            [widget] => Array
+                (
+                    [0] => Array
+                        (
+                            [#title] => stdClass Object
+                                (
+                                    [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                                    [string:protected] => Email
+                                    [translatedMarkup:protected] => 
+                                    [options:protected] => Array
+                                        (
+                                        )
+
+                                    [stringTranslation:protected] => 
+                                    [arguments:protected] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [#title_display] => before
+                            [#description] => stdClass Object
+                                (
+                                    [__CLASS__] => Drupal\Core\Field\FieldFilteredMarkup
+                                    [string:protected] => The subscriber's email address.
+                                )
+
+                            [#field_parents] => Array
+                                (
+                                )
+
+                            [#required] => 1
+                            [#delta] => 0
+                            [#weight] => 0
+                            [value] => Array
+                                (
+                                    [#title] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                                            [string:protected] => Email
+                                            [translatedMarkup:protected] => 
+                                            [options:protected] => Array(0)
+                                            [stringTranslation:protected] => 
+                                            [arguments:protected] => Array(0)
+                                        )
+
+                                    [#title_display] => before
+                                    [#description] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Field\FieldFilteredMarkup
+                                            [string:protected] => The subscriber's email address.
+                                        )
+
+                                    [#field_parents] => Array
+                                        (
+                                        )
+
+                                    [#required] => 1
+                                    [#delta] => 0
+                                    [#weight] => 0
+                                    [#type] => email
+                                    [#default_value] => test@test.ru
+                                    [#placeholder] => 
+                                    [#size] => 60
+                                    [#maxlength] => 254
+                                )
+
+                        )
+
+                    [#theme] => field_multiple_value_form
+                    [#field_name] => mail
+                    [#cardinality] => 1
+                    [#cardinality_multiple] => 
+                    [#required] => 1
+                    [#title] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                            [string:protected] => Email
+                            [translatedMarkup:protected] => 
+                            [options:protected] => Array
+                                (
+                                )
+
+                            [stringTranslation:protected] => 
+                            [arguments:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [#description] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\Field\FieldFilteredMarkup
+                            [string:protected] => The subscriber's email address.
+                        )
+
+                    [#max_delta] => 0
+                    [#after_build] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Drupal\Core\Field\Plugin\Field\FieldWidget\EmailDefaultWidget
+                                    [1] => afterBuild
+                                )
+
+                        )
+
+                    [#field_parents] => Array
+                        (
+                        )
+
+                    [#parents] => Array
+                        (
+                            [0] => mail
+                        )
+
+                    [#tree] => 1
+                )
+
+            [#access] => 
+            [#weight] => 5
+            [#cache] => Array
+                (
+                    [contexts] => Array
+                        (
+                        )
+
+                    [tags] => Array
+                        (
+                        )
+
+                    [max-age] => -1
+                )
+
+        )
+
+    [subscriptions] => Array
+        (
+            [#type] => container
+            [#parents] => Array
+                (
+                    [0] => subscriptions_wrapper
+                )
+
+            [#attributes] => Array
+                (
+                    [class] => Array
+                        (
+                            [0] => field--type-simplenews-subscription
+                            [1] => field--name-subscriptions
+                            [2] => field--widget-simplenews-subscription-select
+                        )
+
+                )
+
+            [widget] => Array
+                (
+                    [#title] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                            [string:protected] => Subscriptions for %mail
+                            [translatedMarkup:protected] => 
+                            [options:protected] => Array
+                                (
+                                )
+
+                            [stringTranslation:protected] => 
+                            [arguments:protected] => Array
+                                (
+                                    [%mail] => test@test.ru
+                                )
+
+                        )
+
+                    [#description] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                            [string:protected] => Check the newsletters you want to subscribe to. Uncheck the ones you want to unsubscribe from.
+                            [translatedMarkup:protected] => 
+                            [options:protected] => Array
+                                (
+                                )
+
+                            [stringTranslation:protected] => 
+                            [arguments:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [#field_parents] => Array
+                        (
+                        )
+
+                    [#required] => 
+                    [#delta] => 0
+                    [#weight] => 0
+                    [0] => Array
+                        (
+                            [target_id] => Array
+                                (
+                                    [#type] => value
+                                    [#value] => default
+                                )
+
+                        )
+
+                    [#after_build] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Drupal\simplenews\Plugin\Field\FieldWidget\SubscriptionWidget
+                                    [1] => afterBuild
+                                )
+
+                        )
+
+                    [#field_name] => subscriptions
+                    [#parents] => Array
+                        (
+                            [0] => subscriptions
+                        )
+
+                    [#tree] => 1
+                )
+
+            [#access] => 1
+            [#weight] => 0
+            [#cache] => Array
+                (
+                    [contexts] => Array
+                        (
+                            [0] => languages:language_interface
+                        )
+
+                    [tags] => Array
+                        (
+                            [0] => config:field.field.simplenews_subscriber.simplenews_subscriber.subscriptions
+                            [1] => config:field.storage.simplenews_subscriber.subscriptions
+                        )
+
+                    [max-age] => -1
+                )
+
+        )
+
+    [#entity_builders] => Array
+        (
+            [update_form_langcode] => ::updateFormLangcode
+        )
+
+    [message] => Array
+        (
+            [#type] => item
+            [#markup] => Stay informed - subscribe to our newsletter.
+        )
+
+    [actions] => Array
+        (
+            [subscribe] => Array
+                (
+                    [#access] => 
+                    [#type] => submit
+                    [#value] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                            [string:protected] => Subscribe
+                            [translatedMarkup:protected] => 
+                            [options:protected] => Array
+                                (
+                                )
+
+                            [stringTranslation:protected] => 
+                            [arguments:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [#submit] => Array
+                        (
+                            [0] => ::submitForm
+                            [1] => ::save
+                            [2] => ::submitSubscribe
+                        )
+
+                    [#weight] => 5
+                )
+
+            [unsubscribe] => Array
+                (
+                    [#access] => 1
+                    [#type] => submit
+                    [#value] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                            [string:protected] => Unsubscribe
+                            [translatedMarkup:protected] => 
+                            [options:protected] => Array
+                                (
+                                )
+
+                            [stringTranslation:protected] => 
+                            [arguments:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [#submit] => Array
+                        (
+                            [0] => ::submitForm
+                            [1] => ::save
+                            [2] => ::submitUnsubscribe
+                        )
+
+                    [#weight] => 10
+                )
+
+            [update] => Array
+                (
+                    [#access] => 
+                    [#type] => submit
+                    [#value] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                            [string:protected] => Update
+                            [translatedMarkup:protected] => 
+                            [options:protected] => Array
+                                (
+                                )
+
+                            [stringTranslation:protected] => 
+                            [arguments:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [#submit] => Array
+                        (
+                            [0] => ::submitForm
+                            [1] => ::save
+                            [2] => ::submitUpdate
+                        )
+
+                    [#weight] => 15
+                )
+
+            [#type] => actions
+        )
+
+    [#form_id] => simplenews_subscriptions_block_ico_subscription
+    [#type] => form
+    [#attached] => Array
+        (
+            [placeholders] => Array
+                (
+                    [form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM] => Array
+                        (
+                            [#lazy_builder] => Array
+                                (
+                                    [0] => form_builder:renderPlaceholderFormAction
+                                    [1] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [#action] => form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM
+    [#build_id] => form-ZdxN_DF7lNqCuUw5JY-iKorRkWUaSIhfDShp6aHa2Ps
+    [form_build_id] => Array
+        (
+            [#type] => hidden
+            [#value] => form-ZdxN_DF7lNqCuUw5JY-iKorRkWUaSIhfDShp6aHa2Ps
+            [#id] => form-ZdxN_DF7lNqCuUw5JY-iKorRkWUaSIhfDShp6aHa2Ps
+            [#name] => form_build_id
+            [#parents] => Array
+                (
+                    [0] => form_build_id
+                )
+
+        )
+
+    [#token] => form_token_placeholder_Hql8s7RGeqgLsYwfzf37TpCMQIWCIdEUKNwGOdJjMOY
+    [form_token] => Array
+        (
+            [#id] => edit-simplenews-subscriptions-block-ico-subscription-form-token
+            [#type] => token
+            [#default_value] => form_token_placeholder_Hql8s7RGeqgLsYwfzf37TpCMQIWCIdEUKNwGOdJjMOY
+            [#parents] => Array
+                (
+                    [0] => form_token
+                )
+
+            [#attached] => Array
+                (
+                    [placeholders] => Array
+                        (
+                            [form_token_placeholder_Hql8s7RGeqgLsYwfzf37TpCMQIWCIdEUKNwGOdJjMOY] => Array
+                                (
+                                    [#lazy_builder] => Array
+                                        (
+                                            [0] => form_builder:renderFormTokenPlaceholder
+                                            [1] => Array(1)
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [#cache] => Array
+                (
+                    [max-age] => 0
+                )
+
+        )
+
+    [form_id] => Array
+        (
+            [#type] => hidden
+            [#value] => simplenews_subscriptions_block_ico_subscription
+            [#id] => edit-simplenews-subscriptions-block-ico-subscription
+            [#parents] => Array
+                (
+                    [0] => form_id
+                )
+
+        )
+
+    [#id] => simplenews-subscriptions-block-ico-subscription
+    [#method] => post
+    [#theme_wrappers] => Array
+        (
+            [0] => form
+        )
+
+    [#defaults_loaded] => 1
+    [#tree] => 
+    [#validate] => Array
+        (
+            [0] => ::validateForm
+        )
+
+    [#submit] => Array
+        (
+            [0] => ::submitForm
+        )
+
+    [#theme] => Array
+        (
+            [0] => simplenews_subscriptions_block_ico_subscription
+            [1] => simplenews_subscriber_form
+        )
+
+)
+You have been unsubscribed.
+Array
+(
+    [#attributes] => Array
+        (
+            [class] => Array
+                (
+                    [0] => simplenews-subscriptions-block-ico-subscription
+                    [1] => simplenews-subscriber-form
+                )
+
+            [data-drupal-selector] => simplenews-subscriptions-block-ico-subscription
+        )
+
+    [#cache] => Array
+        (
+            [contexts] => Array
+                (
+                    [0] => languages:language_interface
+                    [1] => user.roles:authenticated
+                )
+
+            [tags] => Array
+                (
+                    [0] => config:core.entity_form_display.simplenews_subscriber.simplenews_subscriber.default
+                    [1] => simplenews_subscriber:1
+                )
+
+            [max-age] => -1
+        )
+
+    [#process] => Array
+        (
+            [0] => ::processForm
+            [1] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\Entity\Entity\EntityFormDisplay
+                            [displayContext:protected] => form
+                            [id:protected] => simplenews_subscriber.simplenews_subscriber.default
+                            [targetEntityType:protected] => simplenews_subscriber
+                            [bundle:protected] => simplenews_subscriber
+                            [fieldDefinitions:protected] => Array
+                                (
+                                    [mail] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Field\BaseFieldDefinition
+                                            [type:protected] => email
+                                            [propertyDefinitions:protected] => Array(1)
+                                            [schema:protected] => Array(4)
+                                            [indexes:protected] => Array(0)
+                                            [itemDefinition:protected] => Drupal\Core\Field\TypedData\FieldItemDataDefinition
+                                            [definition:protected] => Array(8)
+                                        )
+
+                                    [uid] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Field\BaseFieldDefinition
+                                            [type:protected] => entity_reference
+                                            [propertyDefinitions:protected] => Array(2)
+                                            [schema:protected] => Array(4)
+                                            [indexes:protected] => Array(0)
+                                            [itemDefinition:protected] => Drupal\Core\Field\TypedData\FieldItemDataDefinition
+                                            [definition:protected] => Array(7)
+                                        )
+
+                                    [subscriptions] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\field\Entity\FieldConfig
+                                            [deleted:protected] => 
+                                            [fieldStorage:protected] => Drupal\field\Entity\FieldStorageConfig
+                                            [id:protected] => simplenews_subscriber.simplenews_subscriber.subscriptions
+                                            [field_name:protected] => subscriptions
+                                            [field_type:protected] => simplenews_subscription
+                                            [entity_type:protected] => simplenews_subscriber
+                                            [bundle:protected] => simplenews_subscriber
+                                            [label:protected] => Subscriptions
+                                            [description:protected] => 
+                                            [settings:protected] => Array(2)
+                                            [required:protected] => 
+                                            [translatable:protected] => 
+                                            [default_value:protected] => Array(0)
+                                            [default_value_callback:protected] => 
+                                            [itemDefinition:protected] => Drupal\Core\Field\TypedData\FieldItemDataDefinition
+                                            [constraints:protected] => Array(0)
+                                            [propertyConstraints:protected] => Array(0)
+                                            [originalId:protected] => simplenews_subscriber.simplenews_subscriber.subscriptions
+                                            [status:protected] => 1
+                                            [uuid:protected] => 2305308f-bb4b-4654-8a0b-3b97b990264c
+                                            [langcode:protected] => en
+                                            [third_party_settings:protected] => Array(0)
+                                            [_core:protected] => Array(1)
+                                            [trustedData:protected] => 
+                                            [entityTypeId:protected] => field_config
+                                            [enforceIsNew:protected] => 
+                                            [typedData:protected] => 
+                                            [cacheContexts:protected] => Array(1)
+                                            [cacheTags:protected] => Array(0)
+                                            [cacheMaxAge:protected] => -1
+                                            [_serviceIds:protected] => Array(0)
+                                            [dependencies:protected] => Array(2)
+                                            [isSyncing:Drupal\Core\Config\Entity\ConfigEntityBase:private] => 
+                                            [isUninstalling:Drupal\Core\Config\Entity\ConfigEntityBase:private] => 
+                                        )
+
+                                )
+
+                            [mode:protected] => default
+                            [status:protected] => 1
+                            [content:protected] => Array
+                                (
+                                    [mail] => Array
+                                        (
+                                            [type] => email_default
+                                            [weight] => 5
+                                            [settings] => Array(1)
+                                            [third_party_settings] => Array(0)
+                                            [region] => content
+                                        )
+
+                                    [subscriptions] => Array
+                                        (
+                                            [type] => simplenews_subscription_select
+                                            [weight] => 0
+                                            [settings] => Array(0)
+                                            [third_party_settings] => Array(0)
+                                            [region] => content
+                                        )
+
+                                )
+
+                            [hidden:protected] => Array
+                                (
+                                    [uid] => 1
+                                )
+
+                            [originalMode:protected] => block
+                            [plugins:protected] => Array
+                                (
+                                    [subscriptions] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\simplenews\Plugin\Field\FieldWidget\SubscriptionWidget
+                                            [newsletterIds:protected] => Array(1)
+                                            [hidden:protected] => 1
+                                            [column:protected] => target_id
+                                            [fieldDefinition:protected] => Drupal\field\Entity\FieldConfig
+                                            [settings:protected] => Array(0)
+                                            [thirdPartySettings:protected] => Array(0)
+                                            [defaultSettingsMerged:protected] => 
+                                            [pluginId:protected] => simplenews_subscription_select
+                                            [pluginDefinition:protected] => Array(6)
+                                            [configuration:protected] => Array(0)
+                                            [stringTranslation:protected] => 
+                                            [_serviceIds:protected] => Array(0)
+                                        )
+
+                                    [mail] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Field\Plugin\Field\FieldWidget\EmailDefaultWidget
+                                            [fieldDefinition:protected] => Drupal\Core\Field\BaseFieldDefinition
+                                            [settings:protected] => Array(2)
+                                            [thirdPartySettings:protected] => Array(0)
+                                            [defaultSettingsMerged:protected] => 1
+                                            [pluginId:protected] => email_default
+                                            [pluginDefinition:protected] => Array(6)
+                                            [configuration:protected] => Array(0)
+                                            [stringTranslation:protected] => 
+                                            [_serviceIds:protected] => Array(0)
+                                        )
+
+                                )
+
+                            [pluginManager:protected] => stdClass Object
+                                (
+                                    [__CLASS__] => Drupal\Core\Field\WidgetPluginManager
+                                    [fieldTypeManager:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Field\FieldTypePluginManager
+                                            [typedDataManager:protected] => Drupal\Core\TypedData\TypedDataManager
+                                            [cacheKey:protected] => field_types_plugins
+                                            [cacheTags:protected] => Array(0)
+                                            [alterHook:protected] => field_info
+                                            [subdir:protected] => Plugin/Field/FieldType
+                                            [moduleHandler:protected] => Drupal\Core\Extension\ModuleHandler
+                                            [defaults:protected] => Array(0)
+                                            [pluginDefinitionAnnotationName:protected] => Drupal\Core\Field\Annotation\FieldType
+                                            [pluginInterface:protected] => Drupal\Core\Field\FieldItemInterface
+                                            [namespaces:protected] => ArrayObject
+                                            [additionalAnnotationNamespaces:protected] => Array(0)
+                                            [discovery:protected] => 
+                                            [factory:protected] => 
+                                            [mapper:protected] => 
+                                            [definitions:protected] => Array(37)
+                                            [cacheBackend:protected] => Drupal\Core\Cache\DatabaseBackend
+                                            [useCaches:protected] => 1
+                                            [stringTranslation:protected] => 
+                                        )
+
+                                    [widgetOptions:protected] => 
+                                    [cacheKey:protected] => field_widget_types_plugins
+                                    [cacheTags:protected] => Array
+                                        (
+                                        )
+
+                                    [alterHook:protected] => field_widget_info
+                                    [subdir:protected] => Plugin/Field/FieldWidget
+                                    [moduleHandler:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Extension\ModuleHandler
+                                            [loadedFiles:protected] => Array(112)
+                                            [moduleList:protected] => Array(112)
+                                            [loaded:protected] => 1
+                                            [implementations:protected] => Array(240)
+                                            [verified:protected] => Array(113)
+                                            [hookInfo:protected] => 
+                                            [cacheBackend:protected] => Drupal\Core\Cache\DatabaseBackend
+                                            [cacheNeedsWriting:protected] => 
+                                            [alterFunctions:protected] => Array(50)
+                                            [root:protected] => D:\OpenServer\domains\tdoft.com
+                                            [includeFileKeys:protected] => Array(14)
+                                        )
+
+                                    [defaults:protected] => Array
+                                        (
+                                        )
+
+                                    [pluginDefinitionAnnotationName:protected] => Drupal\Core\Field\Annotation\FieldWidget
+                                    [pluginInterface:protected] => Drupal\Core\Field\WidgetInterface
+                                    [namespaces:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => ArrayObject
+                                            [__STORAGE__] => Array(124)
+                                        )
+
+                                    [additionalAnnotationNamespaces:protected] => Array
+                                        (
+                                        )
+
+                                    [discovery:protected] => 
+                                    [factory:protected] => 
+                                    [mapper:protected] => 
+                                    [definitions:protected] => Array
+                                        (
+                                            [comment_default] => Array(6)
+                                            [datetime_datelist] => Array(6)
+                                            [datetime_default] => Array(6)
+                                            [file_generic] => Array(6)
+                                            [image_image] => Array(6)
+                                            [link_default] => Array(6)
+                                            [metatag_firehose] => Array(6)
+                                            [panelizer] => Array(6)
+                                            [path] => Array(6)
+                                            [redirect_source] => Array(7)
+                                            [simplenews_subscription_select] => Array(6)
+                                            [telephone_default] => Array(6)
+                                            [text_textarea] => Array(6)
+                                            [text_textarea_with_summary] => Array(6)
+                                            [text_textfield] => Array(6)
+                                            [weight_selector] => Array(6)
+                                            [yamlform_entity_reference_autocomplete] => Array(7)
+                                            [yamlform_entity_reference_select] => Array(7)
+                                            [datetime_timestamp] => Array(6)
+                                            [boolean_checkbox] => Array(6)
+                                            [email_default] => Array(6)
+                                            [entity_reference_autocomplete_tags] => Array(7)
+                                            [entity_reference_autocomplete] => Array(7)
+                                            [language_select] => Array(6)
+                                            [number] => Array(6)
+                                            [options_buttons] => Array(6)
+                                            [options_select] => Array(6)
+                                            [string_textarea] => Array(6)
+                                            [string_textfield] => Array(6)
+                                            [uri] => Array(6)
+                                        )
+
+                                    [cacheBackend:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Cache\DatabaseBackend
+                                            [bin:protected] => cache_discovery
+                                            [connection:protected] => Drupal\Core\Database\Driver\mysql\Connection
+                                            [checksumProvider:protected] => Drupal\Core\Cache\DatabaseCacheTagsChecksum
+                                        )
+
+                                    [useCaches:protected] => 1
+                                )
+
+                            [renderer:protected] => stdClass Object
+                                (
+                                    [__CLASS__] => Drupal\Core\Render\Renderer
+                                    [theme:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Theme\ThemeManager
+                                            [themeNegotiator:protected] => Drupal\Core\Theme\ThemeNegotiator
+                                            [themeRegistry:protected] => Drupal\Core\Theme\Registry
+                                            [activeTheme:protected] => Drupal\Core\Theme\ActiveTheme
+                                            [themeInitialization:protected] => Drupal\Core\Theme\ThemeInitialization
+                                            [moduleHandler:protected] => Drupal\Core\Extension\ModuleHandler
+                                            [root:protected] => D:\OpenServer\domains\tdoft.com
+                                        )
+
+                                    [controllerResolver:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Controller\ControllerResolver
+                                            [classResolver:protected] => Drupal\Core\DependencyInjection\ClassResolver
+                                            [httpMessageFactory:protected] => Symfony\Bridge\PsrHttpMessage\Factory\DiactorosFactory
+                                            [logger:Symfony\Component\HttpKernel\Controller\ControllerResolver:private] => 
+                                            [supportsVariadic:Symfony\Component\HttpKernel\Controller\ControllerResolver:private] => 
+                                            [supportsScalarTypes:Symfony\Component\HttpKernel\Controller\ControllerResolver:private] => 
+                                        )
+
+                                    [elementInfo:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Render\ElementInfoManager
+                                            [elementInfo:protected] => Array(1)
+                                            [themeManager:protected] => Drupal\Core\Theme\ThemeManager
+                                            [cacheTagInvalidator:protected] => Drupal\Core\Cache\CacheTagsInvalidator
+                                            [cacheKey:protected] => element_info
+                                            [cacheTags:protected] => Array(0)
+                                            [alterHook:protected] => 
+                                            [subdir:protected] => Element
+                                            [moduleHandler:protected] => Drupal\Core\Extension\ModuleHandler
+                                            [defaults:protected] => Array(0)
+                                            [pluginDefinitionAnnotationName:protected] => Drupal\Core\Render\Annotation\RenderElement
+                                            [pluginInterface:protected] => Drupal\Core\Render\Element\ElementInterface
+                                            [namespaces:protected] => ArrayObject
+                                            [additionalAnnotationNamespaces:protected] => Array(0)
+                                            [discovery:protected] => 
+                                            [factory:protected] => 
+                                            [mapper:protected] => 
+                                            [definitions:protected] => 
+                                            [cacheBackend:protected] => Drupal\Core\Cache\DatabaseBackend
+                                            [useCaches:protected] => 1
+                                        )
+
+                                    [placeholderGenerator:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Render\PlaceholderGenerator
+                                            [rendererConfig:protected] => Array(2)
+                                        )
+
+                                    [renderCache:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Render\PlaceholderingRenderCache
+                                            [placeholderGenerator:protected] => Drupal\Core\Render\PlaceholderGenerator
+                                            [placeholderResultsCache:protected] => Array(0)
+                                            [requestStack:protected] => Symfony\Component\HttpFoundation\RequestStack
+                                            [cacheFactory:protected] => Drupal\Core\Cache\CacheFactory
+                                            [cacheContextsManager:protected] => Drupal\Core\Cache\Context\CacheContextsManager
+                                        )
+
+                                    [rendererConfig:protected] => Array
+                                        (
+                                            [required_cache_contexts] => Array(3)
+                                            [auto_placeholder_conditions] => Array(3)
+                                        )
+
+                                    [isRenderingRoot:protected] => 
+                                    [requestStack:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => Symfony\Component\HttpFoundation\RequestStack
+                                            [requests:Symfony\Component\HttpFoundation\RequestStack:private] => Array(2)
+                                        )
+
+                                    [contextCollection:protected] => stdClass Object
+                                        (
+                                            [__CLASS__] => SplObjectStorage
+                                        )
+
+                                )
+
+                            [originalId:protected] => simplenews_subscriber.simplenews_subscriber.default
+                            [uuid:protected] => 701118b4-d1a5-419e-905d-eb8b4acc7774
+                            [langcode:protected] => en
+                            [third_party_settings:protected] => Array
+                                (
+                                )
+
+                            [_core:protected] => Array
+                                (
+                                    [default_config_hash] => pxNnkOchZljVErGC7uuVjmPpbp0Wy2CiK-pllIxNLK0
+                                )
+
+                            [trustedData:protected] => 
+                            [entityTypeId:protected] => entity_form_display
+                            [enforceIsNew:protected] => 
+                            [typedData:protected] => 
+                            [cacheContexts:protected] => Array
+                                (
+                                    [0] => languages:language_interface
+                                )
+
+                            [cacheTags:protected] => Array
+                                (
+                                )
+
+                            [cacheMaxAge:protected] => -1
+                            [_serviceIds:protected] => Array
+                                (
+                                )
+
+                            [dependencies:protected] => Array
+                                (
+                                    [config] => Array
+                                        (
+                                            [0] => field.field.simplenews_subscriber.simplenews_subscriber.subscriptions
+                                        )
+
+                                    [module] => Array
+                                        (
+                                            [0] => simplenews
+                                        )
+
+                                )
+
+                            [isSyncing:Drupal\Core\Config\Entity\ConfigEntityBase:private] => 
+                            [isUninstalling:Drupal\Core\Config\Entity\ConfigEntityBase:private] => 
+                        )
+
+                    [1] => processForm
+                )
+
+        )
+
+    [#parents] => Array
+        (
+        )
+
+    [mail] => Array
+        (
+            [#type] => container
+            [#parents] => Array
+                (
+                    [0] => mail_wrapper
+                )
+
+            [#attributes] => Array
+                (
+                    [class] => Array
+                        (
+                            [0] => field--type-email
+                            [1] => field--name-mail
+                            [2] => field--widget-email-default
+                        )
+
+                )
+
+            [widget] => Array
+                (
+                    [0] => Array
+                        (
+                            [#title] => stdClass Object
+                                (
+                                    [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                                    [string:protected] => Email
+                                    [translatedMarkup:protected] => 
+                                    [options:protected] => Array
+                                        (
+                                        )
+
+                                    [stringTranslation:protected] => 
+                                    [arguments:protected] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [#title_display] => before
+                            [#description] => stdClass Object
+                                (
+                                    [__CLASS__] => Drupal\Core\Field\FieldFilteredMarkup
+                                    [string:protected] => The subscriber's email address.
+                                )
+
+                            [#field_parents] => Array
+                                (
+                                )
+
+                            [#required] => 1
+                            [#delta] => 0
+                            [#weight] => 0
+                            [value] => Array
+                                (
+                                    [#title] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                                            [string:protected] => Email
+                                            [translatedMarkup:protected] => 
+                                            [options:protected] => Array(0)
+                                            [stringTranslation:protected] => 
+                                            [arguments:protected] => Array(0)
+                                        )
+
+                                    [#title_display] => before
+                                    [#description] => stdClass Object
+                                        (
+                                            [__CLASS__] => Drupal\Core\Field\FieldFilteredMarkup
+                                            [string:protected] => The subscriber's email address.
+                                        )
+
+                                    [#field_parents] => Array
+                                        (
+                                        )
+
+                                    [#required] => 1
+                                    [#delta] => 0
+                                    [#weight] => 0
+                                    [#type] => email
+                                    [#default_value] => test@test.ru
+                                    [#placeholder] => 
+                                    [#size] => 60
+                                    [#maxlength] => 254
+                                )
+
+                        )
+
+                    [#theme] => field_multiple_value_form
+                    [#field_name] => mail
+                    [#cardinality] => 1
+                    [#cardinality_multiple] => 
+                    [#required] => 1
+                    [#title] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                            [string:protected] => Email
+                            [translatedMarkup:protected] => 
+                            [options:protected] => Array
+                                (
+                                )
+
+                            [stringTranslation:protected] => 
+                            [arguments:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [#description] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\Field\FieldFilteredMarkup
+                            [string:protected] => The subscriber's email address.
+                        )
+
+                    [#max_delta] => 0
+                    [#after_build] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Drupal\Core\Field\Plugin\Field\FieldWidget\EmailDefaultWidget
+                                    [1] => afterBuild
+                                )
+
+                        )
+
+                    [#field_parents] => Array
+                        (
+                        )
+
+                    [#parents] => Array
+                        (
+                            [0] => mail
+                        )
+
+                    [#tree] => 1
+                )
+
+            [#access] => 
+            [#weight] => 5
+            [#cache] => Array
+                (
+                    [contexts] => Array
+                        (
+                        )
+
+                    [tags] => Array
+                        (
+                        )
+
+                    [max-age] => -1
+                )
+
+        )
+
+    [subscriptions] => Array
+        (
+            [#type] => container
+            [#parents] => Array
+                (
+                    [0] => subscriptions_wrapper
+                )
+
+            [#attributes] => Array
+                (
+                    [class] => Array
+                        (
+                            [0] => field--type-simplenews-subscription
+                            [1] => field--name-subscriptions
+                            [2] => field--widget-simplenews-subscription-select
+                        )
+
+                )
+
+            [widget] => Array
+                (
+                    [#title] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                            [string:protected] => Subscriptions for %mail
+                            [translatedMarkup:protected] => 
+                            [options:protected] => Array
+                                (
+                                )
+
+                            [stringTranslation:protected] => 
+                            [arguments:protected] => Array
+                                (
+                                    [%mail] => test@test.ru
+                                )
+
+                        )
+
+                    [#description] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                            [string:protected] => Check the newsletters you want to subscribe to. Uncheck the ones you want to unsubscribe from.
+                            [translatedMarkup:protected] => 
+                            [options:protected] => Array
+                                (
+                                )
+
+                            [stringTranslation:protected] => 
+                            [arguments:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [#field_parents] => Array
+                        (
+                        )
+
+                    [#required] => 
+                    [#delta] => 0
+                    [#weight] => 0
+                    [0] => Array
+                        (
+                            [target_id] => Array
+                                (
+                                    [#type] => value
+                                    [#value] => default
+                                )
+
+                        )
+
+                    [#after_build] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Drupal\simplenews\Plugin\Field\FieldWidget\SubscriptionWidget
+                                    [1] => afterBuild
+                                )
+
+                        )
+
+                    [#field_name] => subscriptions
+                    [#parents] => Array
+                        (
+                            [0] => subscriptions
+                        )
+
+                    [#tree] => 1
+                )
+
+            [#access] => 1
+            [#weight] => 0
+            [#cache] => Array
+                (
+                    [contexts] => Array
+                        (
+                            [0] => languages:language_interface
+                        )
+
+                    [tags] => Array
+                        (
+                            [0] => config:field.field.simplenews_subscriber.simplenews_subscriber.subscriptions
+                            [1] => config:field.storage.simplenews_subscriber.subscriptions
+                        )
+
+                    [max-age] => -1
+                )
+
+        )
+
+    [#entity_builders] => Array
+        (
+            [update_form_langcode] => ::updateFormLangcode
+        )
+
+    [message] => Array
+        (
+            [#type] => item
+            [#markup] => Stay informed - subscribe to our newsletter.
+        )
+
+    [actions] => Array
+        (
+            [subscribe] => Array
+                (
+                    [#access] => 1
+                    [#type] => submit
+                    [#value] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                            [string:protected] => Subscribe
+                            [translatedMarkup:protected] => 
+                            [options:protected] => Array
+                                (
+                                )
+
+                            [stringTranslation:protected] => 
+                            [arguments:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [#submit] => Array
+                        (
+                            [0] => ::submitForm
+                            [1] => ::save
+                            [2] => ::submitSubscribe
+                        )
+
+                    [#weight] => 5
+                )
+
+            [unsubscribe] => Array
+                (
+                    [#access] => 
+                    [#type] => submit
+                    [#value] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                            [string:protected] => Unsubscribe
+                            [translatedMarkup:protected] => 
+                            [options:protected] => Array
+                                (
+                                )
+
+                            [stringTranslation:protected] => 
+                            [arguments:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [#submit] => Array
+                        (
+                            [0] => ::submitForm
+                            [1] => ::save
+                            [2] => ::submitUnsubscribe
+                        )
+
+                    [#weight] => 10
+                )
+
+            [update] => Array
+                (
+                    [#access] => 
+                    [#type] => submit
+                    [#value] => stdClass Object
+                        (
+                            [__CLASS__] => Drupal\Core\StringTranslation\TranslatableMarkup
+                            [string:protected] => Update
+                            [translatedMarkup:protected] => 
+                            [options:protected] => Array
+                                (
+                                )
+
+                            [stringTranslation:protected] => 
+                            [arguments:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [#submit] => Array
+                        (
+                            [0] => ::submitForm
+                            [1] => ::save
+                            [2] => ::submitUpdate
+                        )
+
+                    [#weight] => 15
+                )
+
+            [#type] => actions
+        )
+
+    [#form_id] => simplenews_subscriptions_block_ico_subscription
+    [#type] => form
+    [#attached] => Array
+        (
+            [placeholders] => Array
+                (
+                    [form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM] => Array
+                        (
+                            [#lazy_builder] => Array
+                                (
+                                    [0] => form_builder:renderPlaceholderFormAction
+                                    [1] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [#action] => form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM
+    [#build_id] => form-u1ikET7_nf05ZA3k3hBo4I4jSZw4Apb9mlme_Qpbl3g
+    [form_build_id] => Array
+        (
+            [#type] => hidden
+            [#value] => form-u1ikET7_nf05ZA3k3hBo4I4jSZw4Apb9mlme_Qpbl3g
+            [#id] => form-u1ikET7_nf05ZA3k3hBo4I4jSZw4Apb9mlme_Qpbl3g
+            [#name] => form_build_id
+            [#parents] => Array
+                (
+                    [0] => form_build_id
+                )
+
+        )
+
+    [#token] => form_token_placeholder_Hql8s7RGeqgLsYwfzf37TpCMQIWCIdEUKNwGOdJjMOY
+    [form_token] => Array
+        (
+            [#id] => edit-simplenews-subscriptions-block-ico-subscription-form-token
+            [#type] => token
+            [#default_value] => form_token_placeholder_Hql8s7RGeqgLsYwfzf37TpCMQIWCIdEUKNwGOdJjMOY
+            [#parents] => Array
+                (
+                    [0] => form_token
+                )
+
+            [#attached] => Array
+                (
+                    [placeholders] => Array
+                        (
+                            [form_token_placeholder_Hql8s7RGeqgLsYwfzf37TpCMQIWCIdEUKNwGOdJjMOY] => Array
+                                (
+                                    [#lazy_builder] => Array
+                                        (
+                                            [0] => form_builder:renderFormTokenPlaceholder
+                                            [1] => Array(1)
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [#cache] => Array
+                (
+                    [max-age] => 0
+                )
+
+        )
+
+    [form_id] => Array
+        (
+            [#type] => hidden
+            [#value] => simplenews_subscriptions_block_ico_subscription
+            [#id] => edit-simplenews-subscriptions-block-ico-subscription
+            [#parents] => Array
+                (
+                    [0] => form_id
+                )
+
+        )
+
+    [#id] => simplenews-subscriptions-block-ico-subscription
+    [#method] => post
+    [#theme_wrappers] => Array
+        (
+            [0] => form
+        )
+
+    [#defaults_loaded] => 1
+    [#tree] => 
+    [#validate] => Array
+        (
+            [0] => ::validateForm
+        )
+
+    [#submit] => Array
+        (
+            [0] => ::submitForm
+        )
+
+    [#theme] => Array
+        (
+            [0] => simplenews_subscriptions_block_ico_subscription
+            [1] => simplenews_subscriber_form
+        )
+
+)
